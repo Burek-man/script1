@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="dva.js"></script>
+    <link rel="stylesheet" href="tri.css">
 </head>
 <body>
     <p onclick="increseheight()" id="ballong">
         🎈
     </p>
+
+
+
+
+
+
+
+
+    <style>
+
+        body{
+            background-color: #f7f1f1;
+        }
+
+    </style>
+
+    <img src="off.png" id="lampa" onclick="swap();" alt="off">
+
+    <script>
+        let on = false;
+
+        function swap(){
+            if(on){
+                document.getElementById("lampa").src = "off.png";
+                on = false;
+            }
+            else{
+                document.getElementById("lampa").src = "on.png";
+                on = true;
+            }
+        } 
+    </script>
+
 </body>
 </html>
